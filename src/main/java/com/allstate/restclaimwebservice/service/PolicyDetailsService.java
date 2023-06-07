@@ -15,7 +15,14 @@ public class PolicyDetailsService {
         this.webServiceTemplate = webServiceTemplate;
     }
 
-    public PolicyDetailsResponse sendSoapRequest(PolicyDetailsRequest request) {
-        return (PolicyDetailsResponse) webServiceTemplate.marshalSendAndReceive(request);
+    public PolicyDetailsResponse getPolicyDetails(PolicyDetailsRequest request) throws Exception{
+        PolicyDetailsResponse policyDetailsResponse;
+        try{
+            policyDetailsResponse = (PolicyDetailsResponse) webServiceTemplate.marshalSendAndReceive(request);
+        }
+        catch (Exception e){
+            throw new Exception(e.getMessage());
+        }
+        return policyDetailsResponse;
     }
 }
