@@ -1,9 +1,6 @@
 package com.allstate.restclaimwebservice.controller
 
-
 import com.allstate.restclaimwebservice.model.PolicyDetails
-import com.allstate.restclaimwebservice.model.PolicyDetailsRequest
-import com.allstate.restclaimwebservice.model.PolicyDetailsResponse
 import com.allstate.restclaimwebservice.service.PolicyDetailsService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
@@ -13,9 +10,10 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers
 import spock.lang.Specification
 
+import static org.mockito.ArgumentMatchers.any
+
 //import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*
 
-import static org.mockito.ArgumentMatchers.any
 import static org.mockito.Mockito.when
 
 @WebMvcTest(PolicyDetailsController)

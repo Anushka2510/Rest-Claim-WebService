@@ -26,7 +26,7 @@
             <xs:element name="PolicyNumber" type="xs:int" />
             <xs:element name="CoverageName" type="xs:string" />
             <xs:element name="CoverageLimit" type="xs:double" />
-            <xs:element name="deductible" type="xs:double" />
+            <xs:element name="Deductible" type="xs:double"/>
         </xs:sequence>
     </xs:complexType>
 

@@ -1,8 +1,6 @@
 package com.allstate.restclaimwebservice.service
 
-import com.allstate.restclaimwebservice.model.PolicyDetails
-import com.allstate.restclaimwebservice.model.PolicyDetailsRequest
-import com.allstate.restclaimwebservice.model.PolicyDetailsResponse
+
 import org.springframework.ws.client.core.WebServiceTemplate
 import spock.lang.Specification
 
